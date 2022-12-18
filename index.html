@@ -5,7 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <title>FilatovAE CV</title>
   </head>
-  <body></body>
+  <body>
+      <div class="wrapper">
+        <header class="header">
+          <div class="column">
+            <figure class="header__avatar">
+              <img
+                src="img/avatar.jpg"
+                class="header__picture"
+                alt="Header avatar"
+              >
+            </figure>
+          </div>
+          <div class="column column_main column_header">
+            <h1 class="header__title">
+              Aleksander
+              <span class="header__title header__title_span">Filatov</span>
+            </h1>
+            <h3 class="header__subtitle">Web-developer</h3>
+          </div>
+        </header>
+        <main class="main">
+          <div class="column">
+            <section class="document-section contact">
+              <h2 class="document-title">Contacts</h2>
+              <ul class="contact__wrapper">
+                <li class="contact__block">
+                  <div class="contact__image contact__image_github"></div>
+                  <div class="contact__text">
+                    <a
+                      href="https://github.com/FilatovAE"
+                      target="_blank"
+                      class="contact__link"
+                      >GitHub</a
+                    >
+                  </div>
+                </li>
+                <li class="contact__block">
+                  <div class="contact__image contact__image_telegram"></div>
+                  <div class="contact__text">
+                    <a
+                      href="https://t.me/Filatov_AE"
+                      target="_blank"
+                      class="contact__link"
+                      >@Filatov_AE</a
+                    >
+                  </div>
+                </li>
+                <li class="contact__block">
+                  <div class="contact__image contact__image_email"></div>
+                  <div class="contact__text">
+                    <a href="mailto:filatovaleksander.job@gmail.com" class="contact__link"
+                      >FilatovAleksander.job@gmail.com</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="document-section education">
+              <h2 class="document-title">Education</h2>
+              <div class="education__block">
+                <div class="date education__date">12/2022-03/2023</div>
+                <p class="education__text">
+                  JS/FE Pre-School 2022Q4
+                </p>
+              </div>
+            </section>
+            <section class="document-section skills">
+              <h2 class="document-title">Skills</h2>
+              <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS/SASS/SCSS</li>	
+                <li class="skills__item">Git/GitHub</li>	
+              </ul>  		
+            </section>
+            <section class="document-section languages">
+              <h2 class="document-title">Languages</h2>
+              <ul class="languages__list">
+                <li class="languages__item">Russian - Native speaker</li>
+                <li class="languages__item">English - B1</li>
+              </ul>
+            </section>
+          </div>
+          <div class="column column_main">
+            <section class="document-section about">
+              <h2 class="document-title">About me</h2>
+              <p class="about__text">
+                Hi, I'm a junior frontend-developer. I worked in a small startup, but decided to pump my developer skills in RSSchool.
+              </p>
+            </section>
+
+
+            <section class="document-section code-example">
+              <h2 class="document-title">Code example</h2>
+              <pre>
+                document.addEventListener("click", (event) => {
+                const type = event.target.dataset.type;
+              
+                if (type === "lock") {
+                  const node =
+                    event.target.tagName.toLowerCase() === "i"
+                      ? event.target
+                      : event.target.children[0];
+              
+                  node.classList.toggle("fa-lock-open");
+                  node.classList.toggle("fa-lock");
+                </pre>
+            </section>
+
+
+
+            <section class="document-section project">
+              <h2 class="document-title">My project</h2>
+              <div class="project__wrapper">
+                <div class="project__row">
+                  <div class="project__block">
+                    <div class="project__dot"></div>
+                    <a class="project__text" href="https://codepen.io/allosanya/full/qByWeBN">Email Validation</a>
+                  </div>
+                  <div class="project__block">
+                    <div class="project__dot"></div>
+                    <a class="project__text" href="https://codepen.io/allosanya/full/oNydEVW">Nav Bar</a>
+                  </div>
+                </div>
+                <div class="project__row">
+                  <div class="project__block">
+                    <div class="project__dot"></div>
+                    <a class="project__text" href="https://codepen.io/allosanya/full/bGKMoJQ">Random Colors</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <footer class="footer">
+          <div class="footer__inner">
+            <div class="footer__block">
+              <a
+                href="https://github.com/estydaven"
+                target="_blank"
+                class="footer__social"
+              ></a>
+            </div>
+            <div class="footer__block">
+              <div class="footer__text">
+                <img src="img/rsschool.svg" class="footer__image" alt="">
+                <a href="https://rs.school/js-stage0/" class="footer__link">
+                  Preschool course</a>
+                2022
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="footer__text">
+                <img src="img/github.svg" class="footer__image" alt="">
+                <a href="https://github.com/FilatovAE" class="footer__link">
+                  FilatovAE</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </body>
 </html>
